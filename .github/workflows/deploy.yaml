@@ -20,4 +20,4 @@ jobs:
           chmod 600 keyfile.pem
           mkdir -p ~/.ssh
           ssh-keyscan ec2-3-92-207-202.compute-1.amazonaws.com >> ~/.ssh/known_hosts
-          ssh -v -t -i keyfile.pem ubuntu@3.92.207.202 "sudo bash ~/deplot.sh"
+          ssh -v -t -i -o StrictHostKeyChecking=no keyfile.pem ubuntu@3.92.207.202 "sudo bash ~/deplot.sh"
