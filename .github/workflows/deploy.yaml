@@ -19,5 +19,5 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > keyfile
           chmod 600 keyfile
           mkdir -p ~/.ssh
-          cp known_hosts ~/.ssh/known_hosts
+          ssh-keyscan ec2-3-92-207-202.compute-1.amazonaws.com >> ~/.ssh/known_hosts
           ssh -t -i keyfile ubuntu@3.92.207.202 "sudo bash ~/deplot.sh"
