@@ -6,7 +6,7 @@ app.use(CORS())
 app.use(express.json())
 
 app.get("/" , (req,res) => {
-  res.send("This is updated for the sixth time")
+  res.send("This is updated for the sevanth time")
 })
 
 app.listen(3000, () => {
