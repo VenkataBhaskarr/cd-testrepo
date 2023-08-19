@@ -4,8 +4,10 @@
 
 ### Create a simple nodejs server and push it to github
 
+
+
 ### create an aws ec2 instance and clone the server into the machine and run it there locally 
-    - git pull origin main
+    - git pull origin main         ## pm2 is a process maanger which lets our process runs even when we logput of the ece instance
     - npm install
     - pm2 kill
     - pm2 start index.js
